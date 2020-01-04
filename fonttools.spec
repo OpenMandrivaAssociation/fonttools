@@ -1,6 +1,6 @@
 Name:          fonttools
 Version:       4.2.2
-Release:       %mkrel 2
+Release:       1
 Summary:       A tool to convert True/OpenType fonts to XML and back
 Group:         Development/Other
 License:       BSD
@@ -9,8 +9,8 @@ Source0:       https://github.com/behdad/fonttools/archive/%{version}/%{name}-%{
 
 BuildArch:     noarch
 BuildRequires: glibc-devel
-Requires:      python3-fonttools
-Requires:      python3-setuptools
+Requires:      python-fonttools
+Requires:      python-setuptools
 
 %description
 TTX/FontTools is a tool to convert OpenType and TrueType fonts to and
@@ -18,7 +18,7 @@ from XML. FontTools is a library for manipulating fonts, written in Python.
 It supports TrueType, OpenType, AFM and to an extent Type 1 and some
 Mac-specific formats.
 
-%package -n python3-fonttools
+%package -n python-fonttools
 Summary:       Python 3 fonttools library
 %{?python_provide:%python_provide python3-%{name}}
 BuildRequires: pkgconfig(python3)
@@ -33,7 +33,7 @@ Requires:      python3dist(scipy)
 Requires:      python3dist(matplotlib)
 Requires:      python3dist(sympy)
 # Obsoletes:
-Obsoletes:     python3-ufolib < 4
+Obsoletes:     python-ufolib < 4
 
 %description -n python3-fonttools
 TTX/FontTools is a tool for manipulating TrueType and OpenType fonts. It is
@@ -44,10 +44,10 @@ TrueType and OpenType fonts to an XML-based text format and vice versa.
 %autosetup -p1
 
 %build
-%py3_build
+%py_build
 
 %install
-%py3_install
+%py_install
 
 %files
 %{_bindir}/%{name}
@@ -55,8 +55,8 @@ TrueType and OpenType fonts to an XML-based text format and vice versa.
 %{_bindir}/ttx
 %{_mandir}/man1/ttx.1*
 
-%files -n python3-fonttools
+%files -n python-fonttools
 %doc NEWS.rst
 %license LICENSE
-%{python3_sitelib}/%{name}-%{version}-py%{python3_version}.egg-info/
-%{python3_sitelib}/fontTools
+%{python_sitelib}/%{name}-%{version}-py%{python_version}.egg-info/
+%{python_sitelib}/fontTools
