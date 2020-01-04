@@ -20,7 +20,7 @@ Mac-specific formats.
 
 %package -n python-fonttools
 Summary:       Python 3 fonttools library
-%{?python_provide:%python_provide python3-%{name}}
+%{?python_provide:%python_provide python-%{name}}
 BuildRequires: pkgconfig(python3)
 BuildRequires: python3dist(setuptools)
 # Extra requires
@@ -35,7 +35,7 @@ Requires:      python3dist(sympy)
 # Obsoletes:
 Obsoletes:     python-ufolib < 4
 
-%description -n python3-fonttools
+%description -n python-fonttools
 TTX/FontTools is a tool for manipulating TrueType and OpenType fonts. It is
 written in Python and has a BSD-style, open-source license. TTX can dump
 TrueType and OpenType fonts to an XML-based text format and vice versa.
