@@ -30,7 +30,7 @@ Requires:      python3dist(brotli)
 Requires:      python3dist(zopfli)
 Requires:      python3dist(lz4)
 Requires:      python3dist(scipy)
-Requires:      python3dist(matplotlib)
+Recommends:      python3dist(matplotlib)
 Requires:      python3dist(sympy)
 # Obsoletes:
 Obsoletes:     python-ufolib < 4
