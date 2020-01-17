@@ -1,5 +1,5 @@
 Name:          fonttools
-Version:       4.2.2
+Version:       4.2.4
 Release:       1
 Summary:       A tool to convert True/OpenType fonts to XML and back
 Group:         Development/Other
@@ -29,9 +29,9 @@ Requires:      python3dist(lxml)
 Requires:      python3dist(brotli)
 Requires:      python3dist(zopfli)
 Requires:      python3dist(lz4)
-Requires:      python3dist(scipy)
+Recommends:      python3dist(scipy)
 Recommends:      python3dist(matplotlib)
-Requires:      python3dist(sympy)
+Recommends:      python3dist(sympy)
 # Obsoletes:
 Obsoletes:     python-ufolib < 4
 
