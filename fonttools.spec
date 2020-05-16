@@ -1,5 +1,5 @@
 Name:          fonttools
-Version:       4.9.0
+Version:       4.10.0
 Release:       1
 Summary:       A tool to convert True/OpenType fonts to XML and back
 Group:         Development/Other
@@ -21,7 +21,7 @@ Mac-specific formats.
 %package -n python-fonttools
 Summary:       Python 3 fonttools library
 %{?python_provide:%python_provide python-%{name}}
-BuildRequires: pkgconfig(python3)
+BuildRequires: pkgconfig(python)
 BuildRequires: python3dist(setuptools)
 # Extra requires
 Requires:      python3dist(fs)
