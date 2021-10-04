@@ -1,5 +1,5 @@
 Name:          fonttools
-Version:       4.26.2
+Version:       4.27.1
 Release:       1
 Summary:       A tool to convert True/OpenType fonts to XML and back
 Group:         Development/Other
