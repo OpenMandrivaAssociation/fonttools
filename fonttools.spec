@@ -58,5 +58,5 @@ TrueType and OpenType fonts to an XML-based text format and vice versa.
 %files -n python-fonttools
 %doc NEWS.rst
 %license LICENSE
-#{python_sitelib}/%{name}-%{version}-py%{python_version}.egg-info/
+%{python_sitelib}/fonttools-%{version}.dist-info/
 %{python_sitelib}/fontTools
